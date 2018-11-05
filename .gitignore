@@ -1,0 +1,5 @@
+# Compiled files
+serverless_intrastructure/terraform.tfstate
+serverless_intrastructure/terraform.tfstate.backup
+serverless_intrastructure/.terraform/
+serverless_intrastructure/*.plan
