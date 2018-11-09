@@ -26,22 +26,6 @@ Terraform v0.11.10
     > UI to retrieve information from DynamoDB via Lambda functions
 * Tie the three services together to build a functional serverless web app, and deploy it live on the web.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## How to use
 
 ### Pre-requirement: Set AWS environment variables
@@ -55,7 +39,7 @@ $ export TF_VAR_region=<your_region>
 
 ### Initialize a working directory
 
-`$ cd lamp_intrastructure/`
+`$ cd serverless_intrastructure/`
 
 `$ terraform init`
 

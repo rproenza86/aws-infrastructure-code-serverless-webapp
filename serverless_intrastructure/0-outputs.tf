@@ -5,22 +5,16 @@ output "dynamoDb_created_table_name" {
   value = "${aws_dynamodb_table.suppermission-table.name}"
 }
 
-# DB added row item object
-output "db_item_added-batman" {
-  value = "${aws_dynamodb_table_item.batman.item}"
+#API  access URL
+output "api_gateway_base_url" {
+  value = "${aws_api_gateway_deployment.super_gw_deployment.invoke_url}"
 }
 
-# DB added row item object
-output "db_item_added-superman" {
-  value = "${aws_dynamodb_table_item.superman.item}"
+# output "api_getheroeslist_endpoint" {
+output "Get heroes list API endpoint" {
+  value = "${aws_api_gateway_deployment.super_gw_deployment.invoke_url}/getheroeslist"
 }
 
-# DB added row item object
-output "db_item_added-winchester_brothers" {
-  value = "${aws_dynamodb_table_item.winchester_brothers.item}"
-}
-
-# DB added row item object
-output "db_item_added-iron_man" {
-  value = "${aws_dynamodb_table_item.iron_man.item}"
+output "Get heroes mission details API endpoint" {
+  value = "${aws_api_gateway_deployment.super_gw_deployment.invoke_url}/getmissiondetails"
 }
