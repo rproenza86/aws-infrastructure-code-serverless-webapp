@@ -74,7 +74,35 @@ api_gateway_base_url = https://xdlugc2266.execute-api.us-east-1.amazonaws.com/De
 dynamoDb_created_table_name = SuperMission
 ```
 
-Use the `db_endpoint` and `web_server_public_ip` for the next steps.
+Use the `endpoint` info to test your api directly using this curl calls:
+
+> Get heroes list
+
+```bash
+    curl -X POST \
+    <Use your "Get heroes list API endpoint" output value> \
+    -H 'Cache-Control: no-cache' \
+    -H 'Content-Type: application/json' \
+    -H 'Postman-Token: 84ac228b-d6bc-4768-9a28-a21348f68275' \
+    -d '{}'
+```
+
+> Get missing details for an specific heroe
+
+```bash
+    curl -X POST \
+    https://lrjhqex310.execute-api.us-east-1.amazonaws.com/DeploySuperAPI/getmissiondetails \
+    -H 'Access-Control-Request-Headers: content-type' \
+    -H 'Access-Control-Request-Method: POST' \
+    -H 'Cache-Control: no-cache' \
+    -H 'Content-Type: application/json' \
+    -H 'Origin: null' \
+    -H 'Postman-Token: 8c2ee690-1e93-4784-9981-654cc7d6515c' \
+    -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3604.0 Safari/537.36' \
+    -d '{
+    "superhero": "Batman"
+    }'
+```
 
 ### Generate the SDK For Your API
 
