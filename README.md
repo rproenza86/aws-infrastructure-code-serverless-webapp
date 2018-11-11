@@ -91,7 +91,7 @@ Use the `endpoint` info to test your api directly using this curl calls:
 
 ```bash
     curl -X POST \
-    https://lrjhqex310.execute-api.us-east-1.amazonaws.com/DeploySuperAPI/getmissiondetails \
+    <Use your "Get heroes mission details API endpoint" output value> \
     -H 'Access-Control-Request-Headers: content-type' \
     -H 'Access-Control-Request-Method: POST' \
     -H 'Cache-Control: no-cache' \
