@@ -4,6 +4,11 @@
 
 Terraform scripts to build the AWS environment where to deploy interactive serverless web applications which uses Amazon API Gateway calls to send requests to AWS Lambda backends that query Amazon DynamoDB data.
 
+## Use case description
+Build and run an application and services without needing to provision, manage, and scale infrastructure.
+
+Design, build, and deploy an interactive serverless web application, using a simple HTML/JavaScript web interface which uses Amazon API Gateway calls to end requests to AWS Lambda backends that query Amazon DynamoDB data.
+
 ```
 Tested using:
 
