@@ -1,13 +1,6 @@
 # Serverless Web Apps using Amazon DynamoDB
 
-> Serverless architectures allow you to build and run applications and services without needing to provision, manage, and scale infrastructure.
-
-Terraform scripts to build the AWS environment where to deploy interactive serverless web applications which uses Amazon API Gateway calls to send requests to AWS Lambda backends that query Amazon DynamoDB data.
-
-## Use case description
-Build and run an application and services without needing to provision, manage, and scale infrastructure.
-
-Design, build, and deploy an interactive serverless web application, using a simple HTML/JavaScript web interface which uses Amazon API Gateway calls to end requests to AWS Lambda backends that query Amazon DynamoDB data.
+> Terraform scripts to build the AWS environment where to deploy interactive serverless web applications which uses Amazon API Gateway calls to send requests to AWS Lambda backends that query Amazon DynamoDB data.
 
 ```
 Tested using:
@@ -15,6 +8,11 @@ Tested using:
 Terraform v0.11.10
 + provider.aws v1.42.0
 ```
+
+## Use case description
+Build and run an application and services without needing to provision, manage, and scale infrastructure.
+
+Design, build, and deploy an interactive serverless web application, using a simple HTML/JavaScript web interface which uses Amazon API Gateway calls to end requests to AWS Lambda backends that query Amazon DynamoDB data.
 
 ### Infrastructure objectives
 
