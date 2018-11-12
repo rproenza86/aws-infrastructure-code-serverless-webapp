@@ -57,8 +57,6 @@ $ export TF_VAR_region=<your_region>
 
 ### Delete infrastructure
 
-> Before to run command delete manually the RDS mysql instance(you will be prompt with securities questions)
-
 `$ terraform destroy`
 
 ## How to test?
